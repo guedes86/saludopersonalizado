@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button type="button" onclick="DARK()">Modo Escuro</button>
+        <form action="Saludar">
+            <h1>Saludo Personalizado</h1>
+            <label for="entrada">Nombre<input type="text" id="entrada" required></label>
+        </label>
+        <button type="button" onclick="saludar()" id="btn" title="Saludar2">Saludar!</button>
+        <span id="resposta"></span>
+        <script>
+            function saludar(){
+                let num1 = 
+
+                document.getElementById('resposta').textContent = ("Hola, " + document.getElementById('entrada').value); 
+            }
+
+            function DARK(){
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+</body>
+</html>
